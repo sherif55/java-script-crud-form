@@ -1,0 +1,52 @@
+
+<html>
+<head>
+ <link rel="stylesheet" href="css/all.min.css">  
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/indexstyle.css">
+</head>
+<body>
+    <h1 class="text-center text-success my-2">Employee List</h1>
+    <div class="container">
+        <input onkeyup="search(this.value);" type="text" class="form-control w-25 float-end" placeholder="Search By Employee Name">
+    </div>
+    <div class="clear-fix"></div>
+   <div class="container d-flex justify-content-center align-content-center">
+    <div class="w-50">
+        <label>Employee Name</label>
+       <input id="name" class="form-control my-2">
+       <label>Employee Age</label>
+       <input id="age" class="form-control my-2">
+       <label>Employee Salary</label>
+       <input id="salary" class="form-control my-2">
+       <label>Employee Phone</label>
+       <input  id="phone" class="form-control my-2">
+       <button disabled id="submitBtn" class="btn btn-outline-primary float-end py-2">Add Employee</button>
+       <div class="clearfix"></div>
+    </div>
+
+    <div class="container py-3 w-50">
+        <table class="table">
+
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+                <th>Phone</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody id="tBody">
+
+            </tbody>
+        </table>
+    </div>
+   </div>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mainjs.js"></script>
+</body>
+</html>
